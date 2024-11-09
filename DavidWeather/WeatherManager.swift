@@ -57,8 +57,23 @@ struct WeatherInformation{
 	var content : Response!
 }
 
+//ChatGPT generated API_KEY retrieval
+func loadAPIKey() -> String? {
+	if let path = Bundle.main.path(forResource: "config", ofType: "plist"),
+	   let dict = NSDictionary(contentsOfFile: path) as? [String: AnyObject],
+	   let apiKey = dict["API_KEY"] as? String {
+		return apiKey
+	}
+	return nil
+}
+
+
 class WeatherManager : ObservableObject{
-    private let url = "https://api.weatherapi.com/v1/current.json?key=fa7c4bc55c3d432b825201947240811&q="
+	
+	private var API_KEY : String?
+
+	private var url : String
+
     @Published var weather : Response?
 	@Published var weatherArray : [Weather] = []
 	let toronto : Coordinate = Coordinate(_latitude: "43.6534817", _longitude: "-79.3839347")
@@ -66,10 +81,20 @@ class WeatherManager : ObservableObject{
 	let ottawa : Coordinate = Coordinate(_latitude: "45.4208777", _longitude: "-75.6901106")
 	let montreal : Coordinate = Coordinate(_latitude: "45.5031824", _longitude: "-73.5698065")
 
-
+	
 //	var weatherArray : [WeatherInformation] = []
 
     private let jsonDecoder = JSONDecoder()
+
+	init(){
+		//super.init()
+		if let API_KEY = loadAPIKey(){
+			url = "https://api.weatherapi.com/v1/current.json?key=\(API_KEY)&q="
+		}else{
+			print("API_KEY is not properly working")
+			url = "Not working"
+		}
+	}
 
 
     func getWeather(latitude: String, longitude: String, completion: @escaping (Response?) -> Void){
