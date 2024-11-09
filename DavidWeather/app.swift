@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+@available(macOS 14, *)
 @main
 struct DavidWeatherApp: App {
     var body: some Scene {
