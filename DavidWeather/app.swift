@@ -7,11 +7,11 @@
 
 import SwiftUI
 
-@available(macOS 14, *)
+@available(macOS 14,*)
 @main
-struct DavidWeatherApp: App {
-    var body: some Scene {
-        WindowGroup {
+struct DavidWeatherApp:App{
+    var body:some Scene{
+        WindowGroup{
             ContentView()
         }
     }

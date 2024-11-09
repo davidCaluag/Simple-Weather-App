@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6723DCFF2CDEA1560044AD6F /* DavidWeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6723DCFE2CDEA1560044AD6F /* DavidWeatherApp.swift */; };
-		6723DD012CDEA1560044AD6F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6723DD002CDEA1560044AD6F /* ContentView.swift */; };
+		6723DCFF2CDEA1560044AD6F /* app.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6723DCFE2CDEA1560044AD6F /* app.swift */; };
+		6723DD012CDEA1560044AD6F /* content view.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6723DD002CDEA1560044AD6F /* content view.swift */; };
 		6723DD032CDEA15F0044AD6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6723DD022CDEA15F0044AD6F /* Assets.xcassets */; };
 		6723DD072CDEA15F0044AD6F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6723DD062CDEA15F0044AD6F /* Preview Assets.xcassets */; };
 		6723DD112CDEA1600044AD6F /* DavidWeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6723DD102CDEA1600044AD6F /* DavidWeatherTests.swift */; };
 		6723DD1B2CDEA1600044AD6F /* DavidWeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6723DD1A2CDEA1600044AD6F /* DavidWeatherUITests.swift */; };
 		6723DD1D2CDEA1600044AD6F /* DavidWeatherUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6723DD1C2CDEA1600044AD6F /* DavidWeatherUITestsLaunchTests.swift */; };
+		6723DD2B2CDEA53B0044AD6F /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6723DD2A2CDEA53B0044AD6F /* LocationManager.swift */; };
+		6773F0142CDEB1090074BA64 /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6773F0132CDEB1090074BA64 /* WeatherManager.swift */; };
+		6773F0182CDED8770074BA64 /* MyStandaloneClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6773F0172CDED8770074BA64 /* MyStandaloneClasses.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,8 +38,8 @@
 
 /* Begin PBXFileReference section */
 		6723DCFB2CDEA1560044AD6F /* DavidWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DavidWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		6723DCFE2CDEA1560044AD6F /* DavidWeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DavidWeatherApp.swift; sourceTree = "<group>"; };
-		6723DD002CDEA1560044AD6F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6723DCFE2CDEA1560044AD6F /* app.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = app.swift; sourceTree = "<group>"; };
+		6723DD002CDEA1560044AD6F /* content view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "content view.swift"; sourceTree = "<group>"; };
 		6723DD022CDEA15F0044AD6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6723DD042CDEA15F0044AD6F /* DavidWeather.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DavidWeather.entitlements; sourceTree = "<group>"; };
 		6723DD062CDEA15F0044AD6F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -45,6 +48,10 @@
 		6723DD162CDEA1600044AD6F /* DavidWeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DavidWeatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6723DD1A2CDEA1600044AD6F /* DavidWeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DavidWeatherUITests.swift; sourceTree = "<group>"; };
 		6723DD1C2CDEA1600044AD6F /* DavidWeatherUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DavidWeatherUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6723DD292CDEA18D0044AD6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		6723DD2A2CDEA53B0044AD6F /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		6773F0132CDEB1090074BA64 /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
+		6773F0172CDED8770074BA64 /* MyStandaloneClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStandaloneClasses.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +82,8 @@
 		6723DCF22CDEA1560044AD6F = {
 			isa = PBXGroup;
 			children = (
+				6773F0172CDED8770074BA64 /* MyStandaloneClasses.swift */,
+				6723DD2A2CDEA53B0044AD6F /* LocationManager.swift */,
 				6723DCFD2CDEA1560044AD6F /* DavidWeather */,
 				6723DD0F2CDEA1600044AD6F /* DavidWeatherTests */,
 				6723DD192CDEA1600044AD6F /* DavidWeatherUITests */,
@@ -95,11 +104,13 @@
 		6723DCFD2CDEA1560044AD6F /* DavidWeather */ = {
 			isa = PBXGroup;
 			children = (
-				6723DCFE2CDEA1560044AD6F /* DavidWeatherApp.swift */,
-				6723DD002CDEA1560044AD6F /* ContentView.swift */,
+				6723DD292CDEA18D0044AD6F /* Info.plist */,
+				6723DCFE2CDEA1560044AD6F /* app.swift */,
+				6723DD002CDEA1560044AD6F /* content view.swift */,
 				6723DD022CDEA15F0044AD6F /* Assets.xcassets */,
 				6723DD042CDEA15F0044AD6F /* DavidWeather.entitlements */,
 				6723DD052CDEA15F0044AD6F /* Preview Content */,
+				6773F0132CDEB1090074BA64 /* WeatherManager.swift */,
 			);
 			path = DavidWeather;
 			sourceTree = "<group>";
@@ -259,8 +270,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6723DD012CDEA1560044AD6F /* ContentView.swift in Sources */,
-				6723DCFF2CDEA1560044AD6F /* DavidWeatherApp.swift in Sources */,
+				6723DD012CDEA1560044AD6F /* content view.swift in Sources */,
+				6723DCFF2CDEA1560044AD6F /* app.swift in Sources */,
+				6773F0182CDED8770074BA64 /* MyStandaloneClasses.swift in Sources */,
+				6773F0142CDEB1090074BA64 /* WeatherManager.swift in Sources */,
+				6723DD2B2CDEA53B0044AD6F /* LocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +364,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -405,6 +420,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -424,6 +440,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DavidWeather/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Ask permission for User location";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -462,6 +480,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DavidWeather/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Ask permission for User location";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
